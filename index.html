@@ -3,37 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Delicious Restaurant</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: #fff;
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-        p {
-            color: #666;
+        .download-link {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Simple HTML Page</h1>
-        <p>This is a basic HTML file created for demonstration purposes.</p>
-        <img src="https://via.placeholder.com/400" alt="Placeholder Image">
-        <p>Feel free to modify and expand it as you learn more about HTML!</p>
-    </div>
+    <header>
+        <h1>Delicious Restaurant</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to Delicious Restaurant</h2>
+        <p>Experience the taste of perfection!</p>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Check out our delicious dishes:</p>
+        <ul>
+            <li>Starter</li>
+            <li>Main Course</li>
+            <li>Desserts</li>
+            <li>Drinks</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are committed to serving quality food with excellent service.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Restaurant Street, City, Country</p>
+        <p>Phone: +1234567890</p>
+        <p>Email: info@deliciousrestaurant.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+        <a class="download-link" href="data:text/html;charset=utf-8,<!DOCTYPE html><html lang='en'>" download="DeliciousRestaurant.html">Download Website</a>
+    </footer>
 </body>
 </html>
